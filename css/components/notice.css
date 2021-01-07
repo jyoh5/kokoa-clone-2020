@@ -1,0 +1,7 @@
+.notice {
+  display: block;
+  width: 5px;
+  height: 5px;
+  background-color: crimson;
+  border-radius: 50%;
+}

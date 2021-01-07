@@ -1,0 +1,108 @@
+.recommended-friends {
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
+  padding: 25px 0px;
+  margin: 25px 0px;
+}
+.recommended-friends__title {
+  font-size: 16px;
+  color: var(--font-grey);
+}
+.recommended-friends span {
+  display: block;
+  margin: 110px 0px;
+  text-align: center;
+  font-size: 22px;
+  color: var(--font-grey);
+}
+.open-chat__header {
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+.open-chat__header span {
+  color: var(--font-grey);
+}
+.open-post {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  border-bottom: var(--main-border);
+}
+.open-post__title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+.open-post__hashtag {
+  text-transform: uppercase;
+  color: var(--font-grey);
+}
+.open-post__members {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+.open-post__members img {
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.open-post__member-count {
+  color: var(--font-grey);
+  font-size: 14px;
+}
+.open-post__members .divider {
+  width: 1px;
+  height: 12px;
+  background-color: var(--font-grey);
+  margin: 0px 5px;
+}
+.open-post__member-status {
+  color: #ff86d0;
+}
+.open-post__photo {
+  position: relative;
+}
+.open-post__photo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 10%;
+}
+.open-post__heart-count {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 14px;
+}
+.open-post__heart-count span {
+  margin-left: 3px;
+}
+
+@keyframes heartBeat {
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.5);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
+}
+.open-post__heart-count:hover i {
+  will-change: transform;
+  animation: heartBeat 1s linear infinite;
+}
